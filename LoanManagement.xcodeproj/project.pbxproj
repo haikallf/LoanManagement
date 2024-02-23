@@ -11,6 +11,15 @@
 		DE0C0C7B2B88D3FE005425C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C7A2B88D3FE005425C0 /* ContentView.swift */; };
 		DE0C0C7D2B88D3FF005425C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE0C0C7C2B88D3FF005425C0 /* Assets.xcassets */; };
 		DE0C0C802B88D3FF005425C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE0C0C7F2B88D3FF005425C0 /* Preview Assets.xcassets */; };
+		DE0C0C8A2B88DA0F005425C0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C892B88DA0F005425C0 /* HomeView.swift */; };
+		DE0C0C8C2B88DA19005425C0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C8B2B88DA19005425C0 /* HomeViewModel.swift */; };
+		DE0C0C8F2B88DA33005425C0 /* LoanCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C8E2B88DA33005425C0 /* LoanCard.swift */; };
+		DE0C0C912B88DA8A005425C0 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C902B88DA8A005425C0 /* Loan.swift */; };
+		DE0C0C932B88DCAB005425C0 /* Borrower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C922B88DCAB005425C0 /* Borrower.swift */; };
+		DE0C0C952B88DCC2005425C0 /* Collateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C942B88DCC2005425C0 /* Collateral.swift */; };
+		DE0C0C972B88DCD1005425C0 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C962B88DCD1005425C0 /* Document.swift */; };
+		DE0C0C992B88DCE4005425C0 /* RepaymentSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C982B88DCE4005425C0 /* RepaymentSchedule.swift */; };
+		DE0C0C9B2B88DCFA005425C0 /* Installment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C9A2B88DCFA005425C0 /* Installment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		DE0C0C7A2B88D3FE005425C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE0C0C7C2B88D3FF005425C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE0C0C7F2B88D3FF005425C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE0C0C892B88DA0F005425C0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DE0C0C8B2B88DA19005425C0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DE0C0C8E2B88DA33005425C0 /* LoanCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCard.swift; sourceTree = "<group>"; };
+		DE0C0C902B88DA8A005425C0 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		DE0C0C922B88DCAB005425C0 /* Borrower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borrower.swift; sourceTree = "<group>"; };
+		DE0C0C942B88DCC2005425C0 /* Collateral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collateral.swift; sourceTree = "<group>"; };
+		DE0C0C962B88DCD1005425C0 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		DE0C0C982B88DCE4005425C0 /* RepaymentSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentSchedule.swift; sourceTree = "<group>"; };
+		DE0C0C9A2B88DCFA005425C0 /* Installment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,9 @@
 		DE0C0C772B88D3FE005425C0 /* LoanManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DE0C0C882B88D8D4005425C0 /* View */,
+				DE0C0C872B88D8C3005425C0 /* ViewModels */,
+				DE0C0C862B88D8BE005425C0 /* Models */,
 				DE0C0C782B88D3FE005425C0 /* LoanManagementApp.swift */,
 				DE0C0C7A2B88D3FE005425C0 /* ContentView.swift */,
 				DE0C0C7C2B88D3FF005425C0 /* Assets.xcassets */,
@@ -65,6 +86,44 @@
 				DE0C0C7F2B88D3FF005425C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE0C0C862B88D8BE005425C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE0C0C902B88DA8A005425C0 /* Loan.swift */,
+				DE0C0C922B88DCAB005425C0 /* Borrower.swift */,
+				DE0C0C942B88DCC2005425C0 /* Collateral.swift */,
+				DE0C0C962B88DCD1005425C0 /* Document.swift */,
+				DE0C0C982B88DCE4005425C0 /* RepaymentSchedule.swift */,
+				DE0C0C9A2B88DCFA005425C0 /* Installment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE0C0C872B88D8C3005425C0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DE0C0C8B2B88DA19005425C0 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DE0C0C882B88D8D4005425C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE0C0C8D2B88DA20005425C0 /* Components */,
+				DE0C0C892B88DA0F005425C0 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE0C0C8D2B88DA20005425C0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE0C0C8E2B88DA33005425C0 /* LoanCard.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0C0C8F2B88DA33005425C0 /* LoanCard.swift in Sources */,
+				DE0C0C912B88DA8A005425C0 /* Loan.swift in Sources */,
+				DE0C0C992B88DCE4005425C0 /* RepaymentSchedule.swift in Sources */,
+				DE0C0C9B2B88DCFA005425C0 /* Installment.swift in Sources */,
+				DE0C0C8A2B88DA0F005425C0 /* HomeView.swift in Sources */,
 				DE0C0C7B2B88D3FE005425C0 /* ContentView.swift in Sources */,
 				DE0C0C792B88D3FE005425C0 /* LoanManagementApp.swift in Sources */,
+				DE0C0C972B88DCD1005425C0 /* Document.swift in Sources */,
+				DE0C0C8C2B88DA19005425C0 /* HomeViewModel.swift in Sources */,
+				DE0C0C952B88DCC2005425C0 /* Collateral.swift in Sources */,
+				DE0C0C932B88DCAB005425C0 /* Borrower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
