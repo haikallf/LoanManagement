@@ -9,8 +9,10 @@ import Foundation
 import Alamofire
 
 struct LoanAPI {
+    static let baseURL = "https://raw.githubusercontent.com/andreascandle/p2p_json_test/main"
+    
     static func getLoans(completion: @escaping (Result<[Loan], Error>) -> Void) {
-        let url = "https://raw.githubusercontent.com/andreascandle/p2p_json_test/main/api/json/loans.json"
+        let url = baseURL + "/api/json/loans.json"
         AF.request(url,
                        method: .get,
                        parameters: nil,

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Document: Codable {
+struct Document: Codable, Hashable {
     let type: String
     let url: String
 }

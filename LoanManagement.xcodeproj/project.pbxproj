@@ -22,6 +22,10 @@
 		DE0C0C9B2B88DCFA005425C0 /* Installment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C9A2B88DCFA005425C0 /* Installment.swift */; };
 		DE0C0C9E2B88E914005425C0 /* LoanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C9D2B88E914005425C0 /* LoanAPI.swift */; };
 		DE0C0CA12B88EAA4005425C0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE0C0CA02B88EAA4005425C0 /* Alamofire */; };
+		DE0C0CA32B88EFEF005425C0 /* LoanDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0CA22B88EFEF005425C0 /* LoanDetailsView.swift */; };
+		DE0C0CA52B88F10C005425C0 /* LoanDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0CA42B88F10C005425C0 /* LoanDetailsViewModel.swift */; };
+		DE0C0CA72B89012B005425C0 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0CA62B89012B005425C0 /* DocumentView.swift */; };
+		DE0C0CA92B890169005425C0 /* DocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0CA82B890169005425C0 /* DocumentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		DE0C0C982B88DCE4005425C0 /* RepaymentSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentSchedule.swift; sourceTree = "<group>"; };
 		DE0C0C9A2B88DCFA005425C0 /* Installment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installment.swift; sourceTree = "<group>"; };
 		DE0C0C9D2B88E914005425C0 /* LoanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanAPI.swift; sourceTree = "<group>"; };
+		DE0C0CA22B88EFEF005425C0 /* LoanDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailsView.swift; sourceTree = "<group>"; };
+		DE0C0CA42B88F10C005425C0 /* LoanDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailsViewModel.swift; sourceTree = "<group>"; };
+		DE0C0CA62B89012B005425C0 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
+		DE0C0CA82B890169005425C0 /* DocumentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				DE0C0C8B2B88DA19005425C0 /* HomeViewModel.swift */,
+				DE0C0CA42B88F10C005425C0 /* LoanDetailsViewModel.swift */,
+				DE0C0CA82B890169005425C0 /* DocumentViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			children = (
 				DE0C0C8D2B88DA20005425C0 /* Components */,
 				DE0C0C892B88DA0F005425C0 /* HomeView.swift */,
+				DE0C0CA22B88EFEF005425C0 /* LoanDetailsView.swift */,
+				DE0C0CA62B89012B005425C0 /* DocumentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,12 +231,16 @@
 				DE0C0C912B88DA8A005425C0 /* Loan.swift in Sources */,
 				DE0C0C992B88DCE4005425C0 /* RepaymentSchedule.swift in Sources */,
 				DE0C0C9B2B88DCFA005425C0 /* Installment.swift in Sources */,
+				DE0C0CA72B89012B005425C0 /* DocumentView.swift in Sources */,
 				DE0C0C8A2B88DA0F005425C0 /* HomeView.swift in Sources */,
 				DE0C0C7B2B88D3FE005425C0 /* ContentView.swift in Sources */,
+				DE0C0CA32B88EFEF005425C0 /* LoanDetailsView.swift in Sources */,
 				DE0C0C792B88D3FE005425C0 /* LoanManagementApp.swift in Sources */,
 				DE0C0C972B88DCD1005425C0 /* Document.swift in Sources */,
+				DE0C0CA52B88F10C005425C0 /* LoanDetailsViewModel.swift in Sources */,
 				DE0C0C9E2B88E914005425C0 /* LoanAPI.swift in Sources */,
 				DE0C0C8C2B88DA19005425C0 /* HomeViewModel.swift in Sources */,
+				DE0C0CA92B890169005425C0 /* DocumentViewModel.swift in Sources */,
 				DE0C0C952B88DCC2005425C0 /* Collateral.swift in Sources */,
 				DE0C0C932B88DCAB005425C0 /* Borrower.swift in Sources */,
 			);

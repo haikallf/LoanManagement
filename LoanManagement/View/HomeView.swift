@@ -12,15 +12,17 @@ struct HomeView: View {
     
     var body: some View {
         ScrollView {
-            ForEach(viewModel.loans) { loan in
-                LoanCard(loan, action: {
-                    print(loan.borrower.name)
-                })
+            VStack {
+                ForEach(viewModel.loans) { loan in
+                    NavigationLink(destination: LoanDetailsView(viewModel: LoanDetailsViewModel(loan: loan))) {
+                        LoanCard(loan)
+                    }
+                }
+                
+                Spacer()
             }
-            
-            Spacer()
+            .padding()
         }
-        .padding()
     }
 }
 

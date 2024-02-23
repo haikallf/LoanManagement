@@ -9,11 +9,9 @@ import SwiftUI
 
 struct LoanCard: View {
     let loan: Loan
-    let onTap: () -> Void
     
-    init(_ loan: Loan, action: @escaping () -> Void) {
+    init(_ loan: Loan) {
         self.loan = loan
-        self.onTap = action
     }
     
     var body: some View {
@@ -44,12 +42,10 @@ struct LoanCard: View {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(.gray, lineWidth: 1)
         )
-        .onTapGesture {
-            onTap()
-        }
+        .foregroundStyle(.black)
     }
 }
 
 #Preview {
-    LoanCard(Loan.generateDummy().first!, action: {})
+    LoanCard(Loan.generateDummy().first!)
 }
