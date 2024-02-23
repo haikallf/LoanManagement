@@ -21,7 +21,7 @@ struct LoanCard: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(loan.borrower.name)
-                    Text("IDR \(loan.amount)")
+                    Text("USD \(loan.amount)")
                         .font(.title)
                         .fontWeight(.semibold)
                     Text(loan.purpose)

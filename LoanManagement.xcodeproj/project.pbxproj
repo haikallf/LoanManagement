@@ -20,6 +20,8 @@
 		DE0C0C972B88DCD1005425C0 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C962B88DCD1005425C0 /* Document.swift */; };
 		DE0C0C992B88DCE4005425C0 /* RepaymentSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C982B88DCE4005425C0 /* RepaymentSchedule.swift */; };
 		DE0C0C9B2B88DCFA005425C0 /* Installment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C9A2B88DCFA005425C0 /* Installment.swift */; };
+		DE0C0C9E2B88E914005425C0 /* LoanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C9D2B88E914005425C0 /* LoanAPI.swift */; };
+		DE0C0CA12B88EAA4005425C0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE0C0CA02B88EAA4005425C0 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,7 @@
 		DE0C0C962B88DCD1005425C0 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
 		DE0C0C982B88DCE4005425C0 /* RepaymentSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentSchedule.swift; sourceTree = "<group>"; };
 		DE0C0C9A2B88DCFA005425C0 /* Installment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installment.swift; sourceTree = "<group>"; };
+		DE0C0C9D2B88E914005425C0 /* LoanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0C0CA12B88EAA4005425C0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +73,7 @@
 		DE0C0C772B88D3FE005425C0 /* LoanManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DE0C0C9C2B88E8B5005425C0 /* Services */,
 				DE0C0C882B88D8D4005425C0 /* View */,
 				DE0C0C872B88D8C3005425C0 /* ViewModels */,
 				DE0C0C862B88D8BE005425C0 /* Models */,
@@ -126,6 +131,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		DE0C0C9C2B88E8B5005425C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DE0C0C9D2B88E914005425C0 /* LoanAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +155,9 @@
 			dependencies = (
 			);
 			name = LoanManagement;
+			packageProductDependencies = (
+				DE0C0CA02B88EAA4005425C0 /* Alamofire */,
+			);
 			productName = LoanManagement;
 			productReference = DE0C0C752B88D3FE005425C0 /* LoanManagement.app */;
 			productType = "com.apple.product-type.application";
@@ -170,6 +186,9 @@
 				Base,
 			);
 			mainGroup = DE0C0C6C2B88D3FE005425C0;
+			packageReferences = (
+				DE0C0C9F2B88EAA4005425C0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DE0C0C762B88D3FE005425C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,6 +223,7 @@
 				DE0C0C7B2B88D3FE005425C0 /* ContentView.swift in Sources */,
 				DE0C0C792B88D3FE005425C0 /* LoanManagementApp.swift in Sources */,
 				DE0C0C972B88DCD1005425C0 /* Document.swift in Sources */,
+				DE0C0C9E2B88E914005425C0 /* LoanAPI.swift in Sources */,
 				DE0C0C8C2B88DA19005425C0 /* HomeViewModel.swift in Sources */,
 				DE0C0C952B88DCC2005425C0 /* Collateral.swift in Sources */,
 				DE0C0C932B88DCAB005425C0 /* Borrower.swift in Sources */,
@@ -412,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE0C0C9F2B88EAA4005425C0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE0C0CA02B88EAA4005425C0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE0C0C9F2B88EAA4005425C0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE0C0C6D2B88D3FE005425C0 /* Project object */;
 }
