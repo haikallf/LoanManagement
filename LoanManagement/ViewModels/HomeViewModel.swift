@@ -67,8 +67,18 @@ class HomeViewModel: ObservableObject {
         loansTemp = termFilter.isEmpty ? loansTemp : loansTemp.filter { termFilter.contains($0.term) }
     }
     
-    func resetFilter() {
+    func revertFilter() {
         riskRatingFilter = riskRatingFilterTemp
         termFilter = termFilterTemp
+    }
+    
+    func resetFilter() {
+        riskRatingFilter.removeAll()
+        riskRatingFilterTemp.removeAll()
+        
+        termFilter.removeAll()
+        termFilterTemp.removeAll()
+        
+        loansTemp = loans
     }
 }

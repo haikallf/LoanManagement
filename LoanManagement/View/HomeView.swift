@@ -33,7 +33,7 @@ struct HomeView: View {
         )
         .sheet(isPresented: $shouldPresentSheet) {
             print("Sheet dismissed!")
-            viewModel.resetFilter()
+            viewModel.revertFilter()
         } content: {
             VStack(alignment: .leading) {
                 HStack {
@@ -86,10 +86,26 @@ struct HomeView: View {
                 Spacer()
                 
                 Button(action: {
+                    viewModel.resetFilter()
+                    shouldPresentSheet = false
+                }, label: {
+                    Text("Reset Filter")
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(.white)
+                        .foregroundColor(.blue)
+                        .cornerRadius(8)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(.blue, lineWidth: 1)
+                        )
+                })
+                
+                Button(action: {
                     viewModel.submitFilter()
                     shouldPresentSheet = false
                 }, label: {
-                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                    Text("Submit")
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(.blue)
