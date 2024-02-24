@@ -27,6 +27,7 @@
 		DE0C0CA52B88F10C005425C0 /* LoanDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0CA42B88F10C005425C0 /* LoanDetailsViewModel.swift */; };
 		DE0C0CA72B89012B005425C0 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0CA62B89012B005425C0 /* DocumentView.swift */; };
 		DE0C0CA92B890169005425C0 /* DocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0CA82B890169005425C0 /* DocumentViewModel.swift */; };
+		DE0C0CAB2B8A0266005425C0 /* CheckboxField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0CAA2B8A0266005425C0 /* CheckboxField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		DE0C0CA42B88F10C005425C0 /* LoanDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanDetailsViewModel.swift; sourceTree = "<group>"; };
 		DE0C0CA62B89012B005425C0 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
 		DE0C0CA82B890169005425C0 /* DocumentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewModel.swift; sourceTree = "<group>"; };
+		DE0C0CAA2B8A0266005425C0 /* CheckboxField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				DE0C0C8E2B88DA33005425C0 /* LoanCard.swift */,
+				DE0C0CAA2B8A0266005425C0 /* CheckboxField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				DE0C0C7B2B88D3FE005425C0 /* ContentView.swift in Sources */,
 				DE0C0CA32B88EFEF005425C0 /* LoanDetailsView.swift in Sources */,
 				DE0C0C792B88D3FE005425C0 /* LoanManagementApp.swift in Sources */,
+				DE0C0CAB2B8A0266005425C0 /* CheckboxField.swift in Sources */,
 				DE0C0C972B88DCD1005425C0 /* Document.swift in Sources */,
 				C597D94A2B89D497004E58E3 /* Helpers.swift in Sources */,
 				DE0C0CA52B88F10C005425C0 /* LoanDetailsViewModel.swift in Sources */,

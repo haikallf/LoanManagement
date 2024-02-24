@@ -9,11 +9,12 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel = HomeViewModel()
+    @State var shouldPresentSheet = true
     
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(viewModel.loans) { loan in
+                ForEach(viewModel.loansTemp) { loan in
                     NavigationLink(destination: LoanDetailsView(viewModel: LoanDetailsViewModel(loan: loan))) {
                         LoanCard(loan)
                     }
@@ -24,6 +25,81 @@ struct HomeView: View {
             .padding()
         }
         .navigationBarTitle("LoanManagement", displayMode: .large)
+        .navigationBarItems(
+            trailing:
+                Button("Filter") {
+                    shouldPresentSheet.toggle()
+                }
+        )
+        .sheet(isPresented: $shouldPresentSheet) {
+            print("Sheet dismissed!")
+            viewModel.resetFilter()
+        } content: {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Filter")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                    
+                    Spacer()
+                    
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 24))
+                        .onTapGesture {
+                            shouldPresentSheet = false
+                        }
+                }
+                
+                Text("Risk Rating")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .padding(.top)
+                
+                ForEach(viewModel.riskRatings, id: \.self) { rating in
+                    CheckboxField(
+                        id: rating,
+                        label: rating,
+                        size: 14,
+                        textSize: 14,
+                        callback: viewModel.riskRatingCheckbox, 
+                        isMarked: viewModel.riskRatingFilter.contains(rating)
+                    )
+                }
+                
+                Text("Terms")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .padding(.top)
+                
+                ForEach(viewModel.terms, id: \.self) { term in
+                    CheckboxField(
+                        id: String(term),
+                        label: "\(term)mo",
+                        size: 14,
+                        textSize: 14,
+                        callback: viewModel.termCheckbox,
+                        isMarked: viewModel.termFilter.contains(term)
+                    )
+                }
+                
+                Spacer()
+                
+                Button(action: {
+                    viewModel.submitFilter()
+                    shouldPresentSheet = false
+                }, label: {
+                    /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                })
+            }
+            .padding()
+            .presentationDragIndicator(.visible)
+        }
     }
 }
 
