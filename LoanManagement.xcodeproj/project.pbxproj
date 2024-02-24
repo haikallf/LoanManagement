@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C597D94A2B89D497004E58E3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597D9492B89D497004E58E3 /* Helpers.swift */; };
 		DE0C0C792B88D3FE005425C0 /* LoanManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C782B88D3FE005425C0 /* LoanManagementApp.swift */; };
 		DE0C0C7B2B88D3FE005425C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0C0C7A2B88D3FE005425C0 /* ContentView.swift */; };
 		DE0C0C7D2B88D3FF005425C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE0C0C7C2B88D3FF005425C0 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C597D9492B89D497004E58E3 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		DE0C0C752B88D3FE005425C0 /* LoanManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0C0C782B88D3FE005425C0 /* LoanManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanManagementApp.swift; sourceTree = "<group>"; };
 		DE0C0C7A2B88D3FE005425C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				DE0C0C9D2B88E914005425C0 /* LoanAPI.swift */,
+				C597D9492B89D497004E58E3 /* Helpers.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				DE0C0CA32B88EFEF005425C0 /* LoanDetailsView.swift in Sources */,
 				DE0C0C792B88D3FE005425C0 /* LoanManagementApp.swift in Sources */,
 				DE0C0C972B88DCD1005425C0 /* Document.swift in Sources */,
+				C597D94A2B89D497004E58E3 /* Helpers.swift in Sources */,
 				DE0C0CA52B88F10C005425C0 /* LoanDetailsViewModel.swift in Sources */,
 				DE0C0C9E2B88E914005425C0 /* LoanAPI.swift in Sources */,
 				DE0C0C8C2B88DA19005425C0 /* HomeViewModel.swift in Sources */,

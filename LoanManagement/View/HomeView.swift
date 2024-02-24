@@ -23,6 +23,7 @@ struct HomeView: View {
             }
             .padding()
         }
+        .navigationBarTitle("LoanManagement", displayMode: .large)
     }
 }
 

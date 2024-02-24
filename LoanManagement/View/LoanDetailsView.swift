@@ -46,7 +46,14 @@ struct LoanDetailsView: View {
                         .fontWeight(.semibold)
                     ForEach(viewModel.loan.documents, id: \.self) { doc in
                         NavigationLink(destination: DocumentView(viewModel: DocumentViewModel(url: doc.url))) {
-                            Text(doc.type)
+                            HStack {
+                                Text("•")
+                                VStack(alignment: .leading) {
+                                    Text(doc.type)
+                                    Text(Helpers.getFileName(from: doc.url) ?? "unknown file")
+                                }
+                            }
+                            .padding(.bottom)
                         }
                     }
                 }

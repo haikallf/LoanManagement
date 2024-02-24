@@ -18,7 +18,7 @@ struct DocumentView: View {
             } placeholder: {
                 ProgressView()
             }
-            .frame(width: 50, height: 50)
+            .aspectRatio(contentMode: .fit)
         } else {
             Text("Document cannot bet retrieved")
         }
