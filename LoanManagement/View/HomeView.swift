@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel = HomeViewModel()
-    @State var shouldPresentSheet = true
+    @State var shouldPresentSheet = false
     
     var body: some View {
         ScrollView {
